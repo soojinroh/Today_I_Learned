@@ -6,7 +6,7 @@
 
 다음과 같은 피드백을 받고, Arrays.asList()에 대해서 조금 찾아보았다.
 
-![20190522204207](E:\TIL\img\20190522204207.png)
+![20190522204207](https://github.com/soojinroh/Today_I_Learned/blob/master/img/20190522204207.png)
 
 
 
