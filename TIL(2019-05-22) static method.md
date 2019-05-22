@@ -4,7 +4,7 @@
 
 우아한테크코스 레벨1 두 번째 미션인 Ladder Game을 구현한 뒤 다음과 같은 피드백을 받았다.
 
-![20190522190156](E:\TIL\img\20190522190156.png)
+![https://github.com/soojinroh/Today_I_Learned/blob/master/img/20190522190156.png?raw=true)
 
 
 
