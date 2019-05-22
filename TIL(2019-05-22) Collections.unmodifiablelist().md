@@ -2,7 +2,7 @@
 
 ---
 
-![20190522202935](E:\TIL\img\20190522202935.png)
+![20190522202935](https://github.com/soojinroh/Today_I_Learned/blob/master/img/20190522202935.png)
 
 Collections.unmodifiablelist()는 처음들어보았고, 알아보았다.
 
@@ -10,7 +10,7 @@ Collections.unmodifiablelist()는 처음들어보았고, 알아보았다.
 
 #### Collections.unmodifiablelist()
 
-![20190522202139](E:\TIL\img\20190522202139.png)
+![20190522202139](https://github.com/soojinroh/Today_I_Learned/blob/master/img/20190522202139.png)
 
 
 
