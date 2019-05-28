@@ -12,7 +12,7 @@ AppController Class에서 play()메서드를 이용해 전체 게임을 진행�
 
 
 
-아하! 하고 play() 메서드에 static 키워드를 추가하고 `new AppController().play()`를 `play()`로 바꾸려는데 '정적 메서드는 언제, 왜 때문에 사용해야하는 거지?'라는 의문이 들어 조금 알아보기로 했다. 조금만.
+아하! 하고 play() 메서드에 static 키워드를 추가하고 `new AppController().play()`를 `AppController.play()`로 바꾸려는데 '정적 메서드는 언제, 왜 때문에 사용해야하는 거지?'라는 의문이 들어 조금 알아보기로 했다. 조금만.
 
 ---
 

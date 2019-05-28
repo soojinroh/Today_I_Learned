@@ -8,6 +8,10 @@
 - String.matches는 `매번` 호출할 때마다 `패턴을 다시 컴파일`하는 낭비가 발생한다.
 - Pattern.compile은 pattern을 컴파일하기 때문에 Matcher.matches를 사용하면 매번 pattern을 다시 컴파일하는 것을 피할 수 있다.
 
+
+
+String.matches는 내부적으로 Pattern.matches를 사용하고 있다.
+
 ```java
  String.matches
  
@@ -17,6 +21,10 @@
 ```
 
 
+
+Pattern.matches는 매번 실행될 때마다 Pattern.compile을 호출해 컴파일을 실행한다.
+
+즉, String.matches를 실행할 때마다 Pattern.matches가 실행되고, 따라서 매번 re-compile된다. 이러면, 안 된다. 
 
 ```java
 java.util.regex.Pattern.matches
@@ -29,6 +37,8 @@ public static boolean matches(String regex, CharSequence input) {
 ```
 
 
+
+pattern.matches에서 Pattern.matcher를 사용하길래 Pattern.matcher는 뭔지 따라가봤는데, 뭐. 모르겠다.
 
 ```java
 java.util.regex.Pattern.matcher
@@ -47,6 +57,8 @@ public Matcher matcher(CharSequence input) {
 
 
 
+Pattern.compile은 이렇다.
+
 ```java
 java.util.regex.Pattern.compile
 
@@ -56,6 +68,8 @@ public static Pattern compile(String regex) {
 ```
 
 
+
+Matcher.matches는 요렇게 되어있다. matches()도 더 파고 들어가보려다가 어려워서 여기까지만.
 
 ```java
 java.util.regex.Matcher.matches
@@ -67,7 +81,9 @@ public boolean matches() {
 
 
 
-- 즉, 여러 번 사용할 때는 **Matcher.matches**를 사용하자!
+그래서 뭘 어떻게 사용하는 게 좋은 것인가?
+
+한 번만 할 때는 String.matches나 Matcher.matches나 효율면에서 큰 차이가 없지만 여러 번 사용할 때는 **Matcher.matches**를 사용하자!
 
 ```java
 Pattern p = Pattern.compile(regex);
